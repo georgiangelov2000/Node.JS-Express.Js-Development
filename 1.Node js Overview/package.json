@@ -1,0 +1,12 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "basic node js",
+  "engine":"14.15.1",
+  "main": "index.js",
+  "author": "george angelov",
+  "license": "ISC",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
