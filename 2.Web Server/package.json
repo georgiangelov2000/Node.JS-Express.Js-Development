@@ -1,0 +1,12 @@
+{
+  "name": "2.web-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engine":"14.15.1",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

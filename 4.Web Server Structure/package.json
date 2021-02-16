@@ -1,0 +1,11 @@
+{
+  "name": "structure",
+  "version": "1.0.0",
+  "description": "structure",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "author": "george angelov",
+  "license": "ISC"
+}

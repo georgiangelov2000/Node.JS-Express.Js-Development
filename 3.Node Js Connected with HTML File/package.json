@@ -1,0 +1,11 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "node js html",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "author": "george angelov",
+  "license": "ISC"
+}
