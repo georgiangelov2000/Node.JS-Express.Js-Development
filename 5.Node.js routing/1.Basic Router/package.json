@@ -1,0 +1,15 @@
+{
+  "name": "routing",
+  "version": "1.0.0",
+  "description": "basic routing",
+  "main": "start.js",
+  "engine": "14.15.1",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "author": "George Angelov",
+  "license": "ISC",
+  "dependencies": {
+    "kill-port": "^1.6.1"
+  }
+}

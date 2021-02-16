@@ -1,0 +1,12 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "basic web server",
+  "main": "server.js",
+  "engine":"14.15.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "George Angelov",
+  "license": "ISC"
+}
