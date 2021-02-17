@@ -1,4 +1,4 @@
-const fs=require('fs');
+let fs=require('fs');
 
 module.exports=(req,res)=>{
     if(req.path==='/'){

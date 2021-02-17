@@ -1,7 +1,7 @@
-const http=require('http');
-const port=3002;
-const url=require('url')
-const handlers=require('./handlers')
+let http=require('http');
+let port=3002;
+let url=require('url')
+let handlers=require('./handlers')
 
 http.createServer((req,res)=>{
     req.path=url.parse(req.url).pathname;

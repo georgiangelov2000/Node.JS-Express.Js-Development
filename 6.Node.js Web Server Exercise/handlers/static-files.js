@@ -1,7 +1,7 @@
 const fs=require('fs');
 
-const getContentType=(url)=>{
-    const contentType='text/plain';
+let getContentType=(url)=>{
+    let contentType='text/plain';
     if(url.endsWith('.css')){
         contentType='text/css';
     }else if(url.endsWith('.js')){
@@ -22,7 +22,7 @@ module.exports=(req,res)=>{
             res.end();
             return;
         }
-        const url=req.path;
+        let url=req.path;
         if(url.endsWith('.css')||url.endsWith('.js')||url.endsWith('.html')||url.endsWith('.jpg')){
             res.writeHead(200,{
                 'Content-Type':getContentType(url)
