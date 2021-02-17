@@ -1,0 +1,15 @@
+{
+  "name": "web-server-exercises",
+  "version": "1.0.0",
+  "description": "web-server-exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "server"
+  ],
+  "author": "George Angelov",
+  "license": "UNLICENSED"
+}
