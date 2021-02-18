@@ -1,0 +1,11 @@
+{
+  "name": "web-server-project",
+  "version": "1.0.0",
+  "description": "basic-web-server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "George Angelov",
+  "license": "UNLICENSED"
+}
