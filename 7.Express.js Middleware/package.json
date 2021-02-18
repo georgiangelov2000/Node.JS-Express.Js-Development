@@ -1,0 +1,14 @@
+{
+  "name": "express-overview",
+  "version": "1.0.0",
+  "description": "express-lesson",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "George Angelov",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
