@@ -1,21 +1,20 @@
+const { response } = require('express');
 const express = require('express')
-const app = express();
-const router = express.Router();
+const app = express()
+const router = express.Router()
 const port = 3005;
 
-router.use('/user/:id', function (req, res, next) {
-    console.log('request Url:', req.originalUrl)
-    next()
-}, function (req, res, next) {
-    console.log('Request Type:', req.method)
+router.use(function (req, res, next) {
+    if (!req.headers['x-auth']) return next('router')
     next()
 })
 
-app.get('/', function (req, res) {
-    res.send(`Hello World`);
+router.get('/user/:id',function(req,res){
+    response.send('hello, user!')
 })
-app.get('/user/:id',function(req,res,next){
-    res.send(`User Info: Method->${req.method} : Id->${req.params.id}`)
+
+app.use('/admin',router,function(req,res){
+    res.sendStatus(401)
 })
 
 app.listen(port, () => console.log(`app started on port ${port}`))
