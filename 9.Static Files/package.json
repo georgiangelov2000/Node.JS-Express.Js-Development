@@ -1,0 +1,21 @@
+{
+  "name": "static-files",
+  "version": "1.0.0",
+  "description": "work with static files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "work",
+    "with",
+    "basic",
+    "static",
+    "files"
+  ],
+  "author": "George Angelov",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
