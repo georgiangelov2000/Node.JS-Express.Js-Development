@@ -1,0 +1,14 @@
+{
+  "name": "middleware-router",
+  "version": "1.0.0",
+  "description": "basic lesson for middleware-router",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "George Angelo",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
