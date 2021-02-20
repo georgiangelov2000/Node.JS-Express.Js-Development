@@ -1,6 +1,13 @@
 <%-include('header')-%>
 <div class="container">
-<form action="/route/login" method="POST">
+  
+  <% if(locals.logout){ %>
+  <div class="alter alert-success text-center">
+    <%= logout %>
+  </div>
+  <% } %>
+
+  <form action="/route/login" method="POST">
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
       <input type="email" class="form-control" name="email" placeholder="Enter email">
@@ -10,6 +17,6 @@
       <input type="password" class="form-control" name="password" placeholder="Password">
     </div>
     <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
-</form>
+  </form>
 </div>
 <%-include('footer')-%>
