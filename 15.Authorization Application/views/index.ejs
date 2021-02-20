@@ -1,0 +1,15 @@
+<%-include('header')-%>
+<div class="container">
+<form action="/route/login" method="POST">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" name="email" placeholder="Enter email">
+    </div>
+    <div class="form-group pb-2">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+</form>
+</div>
+<%-include('footer')-%>
