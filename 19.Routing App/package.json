@@ -1,0 +1,14 @@
+{
+  "name": "routing-app",
+  "version": "1.0.0",
+  "description": "routing-app-exercise",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "George Angelov",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
