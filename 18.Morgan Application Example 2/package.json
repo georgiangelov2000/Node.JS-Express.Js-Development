@@ -1,0 +1,16 @@
+{
+  "name": "morgan-example-2",
+  "version": "1.0.0",
+  "description": "morgan-example-part-2",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "George Angelov",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  }
+}
