@@ -1,0 +1,53 @@
+<form action="/api/users" method="POST" id="add-user" class="mb-5" >
+    <div class="form-group">
+      <label for="firstname">Firstname</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstname"
+        name="firstname"
+        aria-describedby="firstname"
+        placeholder="Firstname"
+      />
+    </div>
+    <div class="form-group">
+      <label for="lastname">Lastname</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lastname"
+        name="lastname"
+        placeholder="Lastname"
+      />
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <div class="radio inline">
+          <label for="gender" class="text-dark">Male</label>
+          <input type="radio" name="gender" id="male" value="Male">
+          <label for="gender" class="text-dark">Famale</label>
+          <input type="radio" name="gender" id="famale" value="Famale">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <input
+        type="text"
+        class="form-control"
+        id="country"
+        name="country"
+        placeholder="Country"
+      />
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input
+        type="text"
+        class="form-control"
+        id="city"
+        name="city"
+        placeholder="City"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block update">Submit</button>
+  </form>       
