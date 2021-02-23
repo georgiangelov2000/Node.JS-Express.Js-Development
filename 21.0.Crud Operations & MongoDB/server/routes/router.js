@@ -1,6 +1,6 @@
 const express=require('express');
 const route=express.Router();
-const services=require('./services/rendering');
+const services=require('../services/rendering');
 const controller=require('../controllers/controller');
 route.get('/',services.homePage);
 route.get("/new-user",services.newUser);

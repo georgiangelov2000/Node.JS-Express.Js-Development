@@ -7,7 +7,7 @@ const morgan=require('morgan');
 const bodyparser=require('body-parser');
 const path=require('path');
 
-const connectDb=require('./database/connectdb')
+const connectDb=require('./server/database/connectdb')
 
 dotenv.config({ path: "config.env" });
 
@@ -19,7 +19,7 @@ app.use(morgan('tiny'));
 connectDb();
 app.use(bodyparser.urlencoded({extended:true}))
 
-app.use('/',require('./routes/router'))
+app.use('/',require('./server/routes/router'))
 
 app.listen(port, () => {
   console.log(`Server listen on 3000`);
