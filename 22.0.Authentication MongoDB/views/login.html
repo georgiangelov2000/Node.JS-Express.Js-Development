@@ -14,8 +14,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>Registration Form</h1>
-      <form id="register-form">
+      <h1>Login Form</h1>
+      <form id="login-form">
         <div class="form-group">
           <label for="username">Username</label>
           <input
@@ -42,15 +42,15 @@
     </div>
 
     <script>
-      const form = document.getElementById("register-form");
-      form.addEventListener("submit", registerUser);
+      const form = document.getElementById("login-form");
+      form.addEventListener("submit", loginForm);
 
-       async function registerUser(e) {
+      async function loginForm(e) {
         e.preventDefault();
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-       const result = await fetch("/api/register", {
+        const result = await fetch("/api/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -62,12 +62,13 @@
         }).then((res) => res.json());
 
         if (result.status === "ok") {
-          alert("Success Register");
+          console.log("Got the token: ", result.data);
+          localStorage.setItem('token', result.data)
+          alert("Success Login");
         } else {
           alert(result.error);
         }
-        
-      };
+      }
     </script>
   </body>
 </html>
