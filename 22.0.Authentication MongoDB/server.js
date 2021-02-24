@@ -20,6 +20,14 @@ mongoose.connect(
 app.use("/", express.static(path.join(__dirname, "views")));
 app.use(bodyParser.json());
 
+app.get('/login', function get(req, res) {
+  res.sendFile(path.join(__dirname, 'views/login.html'));
+});
+
+app.get('/', function get(req, res) {
+  res.sendFile(path.join(__dirname, 'views/index.html'));
+});
+
 app.post("/api/login", async (req, res) => {
   const { username, password } = req.body;
   const user = await User.findOne({ username}).lean();
